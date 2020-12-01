@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Sparshik Assessment</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="owl.carousel.min.css" rel="stylesheet"> </head>
+
+<body>
+    <!--header-->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand navbar-brand-centered">
+                    <a href="https://visitabudhabi.ae" class="header-logo" target="_blank"> <img src="slogo.png" class="home-logo"> </a>
+                </div>
+            </div>
+            <div class="navbar-collapse" id="navbar-brand-centered">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <label class="select-box">
+                            <select class="select-language" onchange="javascript:handleSelect(this)">
+                                <option value="index" selected>English</option>
+                                <option value="index-ar">العربية</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--Video Section-->
+    <section>
+        <!--desktop video-->
+        <div id="main-banner" class="new_big_bnr desktop-video" style="background-image:url(dummy-image.png);">
+            <div class="icn_bnr_div" style="display: block;">
+                <a class="inline cboxElement hero-play" id="inline" onclick="fire_hero_video_play();"> <img id="clickMeId" src="video-play.svg" width="70" height="70">
+                    <div class="video-cover"></div>
+                </a>
+            </div>
+        </div>
+        <!--end desktop video-->
+        <!--mobile video-->
+        <div id="main-banner" class="new_big_bnr mobile-video" style="background-image:url(dummy-image.png);">
+            <div class="icn_bnr_div" style="display: block;">
+                <a class="inline cboxElement hero-play" id="inline" onclick="fire_hero_video_play();"> <img id="clickMeIdMobile" src="video-play.svg" width="70" height="70"> </a>
+            </div>
+        </div>
+        <!--end mobile video-->
+        <div style="display: none;" id="slider_6v">
+            <div id="cboxOverlay">
+                <div class="slider_6">
+                    <div class="slider6">
+                        <div class="slider6Content">
+                            <button type="button" id="cboxClose">close</button>
+                            <div id="heroVideo" class="item"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Video Section Ends Here-->
+    <!--content section-->
+    <section class="second-section">
+        <div class="container">
+            <div class="row overlay-content">
+                <div class="col-lg-12 overlay-content-text">
+                    <h2 class="section-title-con">Introduction</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---end section-->
+    <!--Adventure section-->
+    <section class="third-section" style="background-image:url(adventure-slide.jpg);">
+        <div class="container">
+            <h2 class="section-title-white">Lorem ipsum</h2>
+            <div class="owl-carousel" id="third-sec">
+                <!--1st item -->
+                <div class="item">
+                    <div class="carousel-col">
+                        <div class="img-responsive slider-img">
+                            <a href="https://visitabudhabi.ae/en/business/choose.abu.dhabi/event.infrastructure/adnec.aspx" class="adv-img-1" target="_blank" onclick="fire_experience_1_title();"> <img src="dummy-image.png" class="img-responsive item-img"></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="https://visitabudhabi.ae/en/business/choose.abu.dhabi/event.infrastructure/adnec.aspx" class="adv-title-1" target="_blank" onclick="fire_experience_1_title();">Lorem ipsum dolor sit amet</a>
+                            </h4> </div>
+                        <div class="clearfix">
+                            <a href="https://visitabudhabi.ae/en/business/choose.abu.dhabi/event.infrastructure/adnec.aspx" target="_blank" class="pull-left" onclick="fire_experience_1_learn();">
+                                <button type="button" class="btn card-btn-1 learn-1">LEARN MORE</button>
+                            </a>
+                            <a href="http://www.adnec.ae/" target="_blank" class="pull-right" onclick="fire_experience_1_book();">
+                                <button type="button" class="btn card-btn-2 book-1">BOOK NOW</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--2nd item -->
+                <div class="item">
+                    <div class="carousel-col">
+                        <div class="img-responsive slider-img">
+                            <a href="https://visitabudhabi.ae/en/see.and.do/experiences/watersports/kayaking.aspx" class="adv-img-2" target="_blank" onclick="fire_experience_2_title();"> <img src="dummy-image.png" class="img-responsive item-img"></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="https://visitabudhabi.ae/en/see.and.do/experiences/watersports/kayaking.aspx" class="adv-title-2" target="_blank" onclick="fire_experience_2_title();">Lorem ipsum dolor sit amet</a>
+                            </h4> </div>
+                        <div class="clearfix">
+                            <a href="https://visitabudhabi.ae/en/see.and.do/experiences/watersports/kayaking.aspx" target="_blank" class="pull-left" onclick="fire_experience_2_learn();">
+                                <button type="button" class="btn card-btn-1 learn-2">LEARN MORE</button>
+                            </a>
+                            <a href="https://yaslinks.com/" target="_blank" class="pull-right" onclick="fire_experience_2_book();">
+                                <button type="button" class="btn card-btn-2 book-2">BOOK NOW</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--3RD item -->
+                <div class="item">
+                    <div class="carousel-col">
+                        <div class="img-responsive slider-img">
+                            <a href="https://visitabudhabi.ae/en/see.and.do/experiences/motorsports.and.karting/ride.the.track.at.yas.marina.circuit.aspx" class="adv-img-3" target="_blank" onclick="fire_experience_3_title();"> <img src="dummy-image.png" class="img-responsive item-img"></a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                               <a href="https://visitabudhabi.ae/en/see.and.do/experiences/motorsports.and.karting/ride.the.track.at.yas.marina.circuit.aspx" class="adv-title-3" target="_blank" onclick="fire_experience_3_title();">Lorem ipsum dolor sit amet</a>
+                            </h4> </div>
+                        <div class="clearfix">
+                            <a href="https://visitabudhabi.ae/en/see.and.do/experiences/motorsports.and.karting/ride.the.track.at.yas.marina.circuit.aspx" target="_blank" class="pull-left" onclick="fire_experience_3_learn();">
+                                <button type="button" class="btn card-btn-1 learn-3">LEARN MORE</button>
+                            </a>
+                            <a href="https://ticketsyasmarinacircuit.com/en/8481-driving-experiences/experiences/home/" target="_blank" class="pull-right" onclick="fire_experience_3_book();">
+                                <button type="button" class="btn card-btn-2 book-3">BOOK NOW</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo-section">
+        <div class="container">
+            <h2 class="promo-title">Upload File/Photo</h2>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+                    <div class="clearfix">
+                        <a>
+                            <button type="button" class="btn card-btn-2 book-3">Browse a file</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin:0 auto;display: grid;justify-content: center;text-align: center;">
+                    <ul class="social">
+                        <li> <img src="fb-icon.svg" width="36" height="36"> </li>
+                        <li> <img src="twt-icon.svg" width="36" height="36"> </li>
+                        <li> <img src="insta-icon.svg" width="36" height="36"> </li>
+                        <li> <img src="youtube-icon.svg" width="36" height="36"> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery files as needed -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" integrity="sha256-h0cGsrExGgcZtSZ/fRz4AwV+Nn6Urh/3v3jFRQ0w9dQ=" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script src="smart-form-vanilla.js"></script>
+    <script src="lang-select.js"></script>
+    <script src="datalayer_en.js"></script>
+    <!--lazy load video-->
+    </script>
+    <!--tag script-->
+    <script type="text/javascript">
+    function getRandomNumber() {
+        var text = "";
+        var possible = "0123456789";
+        for(var i = 0; i < 25; i++) text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+    }
+    $(function() {
+        var randText = getRandomNumber();
+        var fl_tag = '<iframe src="https://8242311.fls.doubleclick.net/activityi;src=8242311;type=rocke0;cat=visit00;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + randText + '" width="1" height="1" frameborder="0" style="display:none"></iframe>'
+        $('.book-1').on('click', function() {
+            document.getElementById('tag-1').innerHTML = fl_tag;
+            console.log(fl_tag);
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    function show(target) {
+        document.getElementById(target).style.display = 'block';
+        document.getElementById(cboxClose).style.display = 'block';
+        document.getElementById("clickMeId").style.display = 'none';
+    }
+
+    function hide(target) {
+        document.getElementById(target).style.display = 'none';
+        document.getElementById(cboxClose).style.display = 'none';
+        document.getElementById("clickMeId").style.display = 'block';
+    }
+    $('#third-sec').owlCarousel({
+        autoplay: true,
+        loop: true,
+        margin: 30,
+        nav: true,
+        slideTransition: 'linear',
+        fluidSpeed: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1024: {
+                items: 2
+            },
+            1025: {
+                items: 3
+            }
+        }
+    });
+    </script>
+    <!--video-->
+
+    <!--end-->
+    <script type="text/javascript">
+    $(function() {
+        $("video").hover(function() {
+            if($(window).width() < 768) {
+                $(this).css("opacity", "1");
+                this.play();
+            }
+        }, function() {
+            if($(window).width() < 768) {
+                $(this).css("opacity", ".3");
+                this.pause();
+            }
+        });
+        $('.promo-section .accordion ul li').hover(function() {
+            if($(window).width() > 768) {
+                $('.accordion ul li').width('88');
+                $(this).width('' + $(window).width() - 352);
+                if($(this).find('video').length > 0) {
+                    var id = $(this).find('video').attr('id');
+                    $(this).find('video').css('opacity', '1')
+                    setTimeout(function() {
+                        document.getElementById(id).play();
+                    }, 500);
+                }
+            }
+        }, function() {
+            if($(window).width() > 768) {
+                $('.accordion ul li').css('width', '20%');
+                var id = $(this).find('video').attr('id');
+                if($(this).find('video').length > 0) {
+                    $(this).find('video').css('opacity', '0')
+                    setTimeout(function() {
+                        self;
+                        document.getElementById(id).pause();
+                    }, 500);
+                }
+            }
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    function handleSelect(elm) {
+        window.location = elm.value + ".html";
+    }
+    </script>
+    <!-- Facebook retargeting -->
+    <script src="app.js"></script>
+</body>
+
+</html>
